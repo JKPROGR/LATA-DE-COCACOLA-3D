@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #ccc;
+        }
+        .contenedor{
+            margin: 120px auto;
+            height: 400px;
+            width: 100px;
+            perspective: 2000px;
+            animation: mover 4s infinite linear alternate;
+            perspective-origin: 0px -1000px;
+        }
+        .cont-hijo{
+            height: 100%;
+            width: 100%;
+            animation: rotar 10s infinite linear ;
+            transform-style: preserve-3d;
+        }
+        .tapa{
+            height: 310px;
+            width: 310px;
+            border-radius: 50%;
+            position: absolute;
+            transform: rotateX(90deg) translateX(-130px) translateZ(155px);
+        }
+        .lado{
+            position: absolute;
+            height: 100%;
+            width: 50px;
+        }
+        .lado:nth-child(1){
+            transform: rotateY(0deg) translateZ(118px);
+        }
+        .lado:nth-child(2){
+            transform: rotateY(24deg) translateZ(118px);
+        }
+        .lado:nth-child(3){
+            transform: rotateY(48deg) translateZ(118px);
+        }
+        .lado:nth-child(4){
+            transform: rotateY(72deg) translateZ(118px);
+        }
+        .lado:nth-child(5){
+            transform: rotateY(95deg) translateZ(118px);
+        }
+        .lado:nth-child(6){
+            transform: rotateY(120deg) translateZ(118px);
+        }
+        .lado:nth-child(7){
+            transform: rotateY(144deg) translateZ(118px);
+        }
+        .lado:nth-child(8){
+            transform: rotateY(168deg) translateZ(118px);
+        }
+        .lado:nth-child(9){
+            transform: rotateY(192deg) translateZ(118px);
+        }
+        .lado:nth-child(10){
+         transform: rotateY(216deg) translateZ(118px);
+        }
+        .lado:nth-child(11){
+            transform: rotateY(240deg) translateZ(118px);
+        }
+        .lado:nth-child(12){
+            transform: rotateY(264deg) translateZ(118px);
+        }
+        .lado:nth-child(13){
+            transform: rotateY(288deg) translateZ(118px);
+        }
+        .lado:nth-child(14){
+            transform: rotateY(312deg) translateZ(118px);
+        }
+        .lado:nth-child(15){
+            transform: rotateY(336deg) translateZ(118px);
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+        }
+        @keyframes rotar{
+            0%{
+                transform: rotateY(0deg);
+            }
+            100%{
+                transform: rotateY(360deg);
+            }
+        }
+        @keyframes mover{
+            0%{
+                perspective-origin: 0px -1300px;
+                transform: scale(.5);
+            }
+            100%{
+                perspective-origin: 0px -300px;
+                transform: scale(.8);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cont-hijo">
+            <div class="lado"><img src="IMAGENES/fila-1-col-1.png" alt=""></div>
+            <div class="lado"><img src="IMAGENES/fila-1-col-2.png" alt=""></div>
+            <div class="lado"><img src="IMAGENES/fila-1-col-3.png" alt=""></div>
+            <div class="lado"><img src="IMAGENES/fila-1-col-4.png" alt=""></div>
+            <div class="lado"><img src="IMAGENES/fila-1-col-5.png" alt=""></div>
+            <div class="lado"><img src="IMAGENES/fila-1-col-6.png" alt=""></div>
+            <div class="lado"><img src="IMAGENES/fila-1-col-7.png" alt=""></div>
+            <div class="lado"><img src="IMAGENES/fila-1-col-8.png" alt=""></div>
+            <div class="lado"><img src="IMAGENES/fila-1-col-9.png" alt=""></div>
+            <div class="lado"><img src="IMAGENES/fila-1-col-10.png" alt=""></div>
+            <div class="lado"><img src="IMAGENES/fila-1-col-11.png" alt=""></div>
+            <div class="lado"><img src="IMAGENES/fila-1-col-12.png" alt=""></div>
+            <div class="lado"><img src="IMAGENES/fila-1-col-13.png" alt=""></div>
+            <div class="lado"><img src="IMAGENES/fila-1-col-14.png" alt=""></div>
+            <div class="lado"><img src="IMAGENES/fila-1-col-15.png" alt=""></div>
+
+            <div class="tapa">
+                <img src="IMAGENES/tapaa-removebg-preview.png" alt="">
+            </div>
+           
+        </div>
+    </div>
+    
+</body>
+</html>
